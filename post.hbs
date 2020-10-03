@@ -174,10 +174,10 @@ into the {body} of the default.hbs template --}}
           --}}
         {{/post}}
         {{!-- Related posts --}}
-        {{#get "posts" limit="3" filter="tags:[{{post.tags}}]+id:-{{post.id}}" include="tags,authors" as |related|}}
+        {{#get "posts" limit="3" filter="tags:[{{post.tags}}, blog]+id:-{{post.id}}" include="tags,authors" as |related|}}
           <section class="m-recommended">
             <div class="l-wrapper in-recommended">
-              <h3 class="m-section-title in-recommended">{{t "Recommended for you"}}</h3>
+              <h3 class="m-section-title in-recommended">{{t "Recommended"}}</h3>
               <div class="m-recommended-articles">
                 <div class="m-recommended-slider js-recommended-articles">
                   {{!-- The tag below iterates over all the related posts --}}
@@ -187,6 +187,19 @@ into the {body} of the default.hbs template --}}
             </div>
           </section>
         {{/get}}
+        {{#get "posts" limit="3" filter="tags:[blog]+id:-{{post.id}}" include="tags,authors" as |related|}}
+          <section class="m-recommended">
+            <div class="l-wrapper in-recommended">
+              <h3 class="m-section-title in-recommended">{{t "Recent Posts"}}</h3>
+              <div class="m-recommended-articles">
+                <div class="m-recommended-slider js-recommended-articles">
+                  {{!-- The tag below iterates over all the related posts --}}
+                  {{> "loop"}}
+                </div>
+              </div>
+            </div>
+          </section>
+        {{/get}}     
       </div>
     </article>
   </main>

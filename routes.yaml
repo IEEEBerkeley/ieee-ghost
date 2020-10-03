@@ -1,20 +1,12 @@
 routes:
-  /signup/:
-    template: members/signup
-    data: page.signup
-  /signin/:
-    template: members/signin
-    data: page.signin
-  /membership/:
-    template: members/membership
-    data: page.membership
-  /account/:
-    template: members/account
-    data: page.account
 
 collections:
+  /blog/:
+    permalink: /blog/{slug}/
+    filter: tag:blog  
   /:
     permalink: /{slug}/
+    filter: tag:-blog
     template: index
 
 taxonomies:

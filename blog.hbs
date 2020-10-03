@@ -1,8 +1,7 @@
 {{!< default}}
 
-{{#post}}
 <div class="main-wrap">
-    {{!-- Special header.hbs partial to generate the <header> tag --}}
+  {{!-- Special header.hbs partial to generate the <header> tag --}}
     {{> header background=feature_image}}
     {{!-- Inject styles of the hero image to make it responsive --}}
     {{> hero background=feature_image}}
@@ -65,10 +64,11 @@
           {{> "loop"}}
         </div>
       </div>
+      {{!-- Links to Previous/Next posts --}}
+      {{pagination}}
     </div>
   </main>
 </div>
-{{/post}}
 {{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
 {{#contentFor "scripts"}}
   <script defer src="{{asset "js/home.js"}}"></script>
