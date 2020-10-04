@@ -30,11 +30,11 @@
   "devDependencies": {
     "7zip": "0.0.6",
     "@tryghost/admin-api": "^1.2.0",
-    "browser-sync": "^2.26.12",
+    "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.0.1",
     "dotenv": "^8.2.0",
     "fs": "0.0.1-security",
-    "ghost-cli": "^1.14.1",
+    "ghost-cli": "^1.13.1",
     "husky": "^4.2.5",
     "laravel-mix": "^4.1.4",
     "path": "^0.12.7",
