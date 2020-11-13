@@ -8,452 +8,597 @@ into the {body} of the default.hbs template --}}
 
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
-  <div class="main-wrap">
-    {{!-- Special header.hbs partial to generate the <header> tag --}}
-    {{> header background=feature_image}}
-    {{!-- Inject styles of the hero image to make it responsive --}}
-    {{> hero background=feature_image}}
-    <div class="m-hero__content" data-aos="fade-down">
-      <h1 class="m-hero-title bigger">IEEE Officers</h1>
-      <p class="m-hero-description">Fall 2020 Cohort</p>
-    </div>
-    </section>
-    <main>
-      <article>
-        <div class="l-content">
-          <div class="l-wrapper in-post" data-aos="fade-up" data-aos-delay="300">
-	    <div class="ieee-decal-warning">For DeCal information, please <a href="/decal">click here!</a></div>
-            <div class="l-post-content ieee-officer-container">
-              <!-- Executives -->
-              <h2 id="executives" class="ieee-officer-divider">Executives</h2>
-              <p>The Executive officers oversee club affairs, initiate and maintain relations with external and internal parties, manage finances, and lead large events.</p>
-              <div class="ieee-officer-group">
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Exec/kevin_zheng.jpg'}}" alt="Kevin Zheng"/>
-                  <h3>Kevin Zheng</h3>
-                  <p>President</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/kevin-zheng-37b702119/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Exec/neha_hudait.jpg'}}" alt="Neha Hudait"/>
-                  <h3>Neha Hudait</h3>
-                  <p>External Vice President</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/nehahudait"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Exec/eugene_wong.jpg'}}" alt="Eugene Wong"/>
-                  <h3>Eugene Wong</h3>
-                  <p>Internal Vice President</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/eugeneshwong/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Exec/sunay_dagli.jpg'}}" alt="Sunay Dagli"/>
-                  <h3>Sunay Dagli</h3>
-                  <p>Treasurer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/sunaydagli/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Exec/julie_chun.jpg'}}" alt="Julie Chun"/>
-                  <h3>Julie Chun</h3>
-                  <p>Secretary</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/julie-chun/"></a>
-                  </div>
-                </div>
+<div class="main-wrap">
+  {{!-- Special header.hbs partial to generate the <header> tag --}}
+  {{> header background=feature_image}}
+  {{!-- Inject styles of the hero image to make it responsive --}}
+  {{> hero background=feature_image}}
+  <div class="m-hero__content" data-aos="fade-down">
+    <h1 class="m-hero-title bigger">IEEE Officers</h1>
+    <p class="m-hero-description">Fall 2020 Cohort</p>
+  </div>
+</section>
+<main>
+  <article>
+    <div class="l-content">
+      <div class="l-wrapper in-post" data-aos="fade-up" data-aos-delay="300">
+        <div class="ieee-decal-warning">For DeCal information, please <a href="/decal">click here!</a></div>
+        <div class="l-post-content ieee-officer-container">
+          <!-- Executives -->
+          <h2 id="executives" class="ieee-officer-divider">Executives</h2>
+          <p>The Executive officers oversee club affairs, initiate and maintain relations with external and internal parties, manage finances, and lead large events.</p>
+          <div class="ieee-officer-group">
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Exec/kevin_zheng.jpg'}}" alt="Kevin Zheng"/>
+              <h3>Kevin Zheng</h3>
+              <p>President</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/kevin-zheng-37b702119/"></a>
               </div>
-              <!-- Activities -->
-              <h2 id="activities" class="ieee-officer-divider">Activities</h2>
-              <p>The Activities committee provides social support for the EECS community by planning and organizing social events.</p>
-              <div class="ieee-officer-group">
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Activities/george_wang.jpg'}}" alt="George Wang"/>
-                  <h3>George Wang</h3>
-                  <p>Director</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/wgeorge/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Activities/justin_chen.png'}}" alt="Justin Chen"/>
-                  <h3>Justin Chen</h3>
-                  <p>Director</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/justindchen/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Activities/kathy_wu.png'}}" alt="Kathy Wu"/>
-                  <h3>Kathy Wu</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/kathy-wu-76b97a139/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Activities/aditya_bhawal.png'}}" alt="Aditya Bhawal"/>
-                  <h3>Aditya Bhawal</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/aditya-bhawal-4a4352145/"></a>
-                  </div>
-                </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Exec/neha_hudait.jpg'}}" alt="Neha Hudait"/>
+              <h3>Neha Hudait</h3>
+              <p>External Vice President</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/nehahudait"></a>
               </div>
-              <!-- HOPE -->
-              <h2 id="hope" class="ieee-officer-divider">HOPE</h2>
-              <p>HOPE serves as the backbone for developing and facilitating our IEEE Hands on Practical Electronics DeCal, a fun and interactive course to introduce electrical engineering fundamentals to non-EECS students. HOPE is one of our most popular student services, garnering strong support from both the EECS department and IEEE National.The Executive officers oversee club affairs, initiate and maintain relations with external and internal parties, manage finances, and lead large events.</p>
-              <div class="ieee-officer-group">
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Hope/leon_wu.jpg'}}" alt="profilepic"/>
-                  <h3>Leon Wu</h3>
-                  <p>Director</p>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Hope/jeffrey_ni.png'}}" alt="profilepic"/>
-                  <h3>Jeffrey Ni</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/jeffreyni/"></a>
-                  </div>
-                </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Exec/eugene_wong.jpg'}}" alt="Eugene Wong"/>
+              <h3>Eugene Wong</h3>
+              <p>Internal Vice President</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/eugeneshwong/"></a>
               </div>
-              <!-- Indrel -->
-              <h2 id="indrel" class="ieee-officer-divider">Industrial Relations</h2>
-              <p>The Industrial Relations committee is responsible for communicating and interfacing with external organizations and companies. Officers personally interact and cooperate with company representatives and help host infosessions, tech-talks, the biannual Startup Fair, and other industry events that are beneficial to the EECS student body.</p>
-              <div class="ieee-officer-group">
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Indrel/efsane_soyer.png'}}" alt="Efsane Soyer"/>
-                  <h3>Efsane Soyer</h3>
-                  <p>Director</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/efsanesoyer/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Indrel/pranay_rajpaul.png'}}" alt="Pranay Rajpaul"/>
-                  <h3>Pranay Rajpaul</h3>
-                  <p>Director</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/pranayrajpaul/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Indrel/anoosha_balebail.jpg'}}" alt="Anoosha Balebail"/>
-                  <h3>Anoosha Balebail</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/anoosha-balebail-3262b2104/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Indrel/joshua_wong.png'}}" alt="Joshua Wong"/>
-                  <h3>Joshua Wong</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/joshuawong5/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Indrel/ram_abe.png'}}" alt="Ram Abeyakaran"/>
-                  <h3>Ram Abeyakaran</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/babeyakaran/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Indrel/vivian_hsu.jpg'}}" alt="Vivian Hsu"/>
-                  <h3>Vivian Hsu</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/vivian-hsu-1833bb196/"></a>
-                  </div>
-                </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Exec/sunay_dagli.jpg'}}" alt="Sunay Dagli"/>
+              <h3>Sunay Dagli</h3>
+              <p>Treasurer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-github" href="https://github.com/sunaydagli"></a>
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/sunaydagli/"></a>
+                <a target="_blank" class="icon-globe" href="http://sunaydagli.com/"></a>
               </div>
-              <!-- Micromouse -->
-              <h2 id="micromouse" class="ieee-officer-divider">Micromouse</h2>
-              <p>Micromouse serves as the backbone for developing our decal around creating an autonomous mouse used to navigate a maze.</p>
-              <div class="ieee-officer-group">
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Micromouse/matthew_tran.png'}}" alt="profilepic"/>
-                  <h3>Matthew Tran</h3>
-                  <p>Director</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/matthewlamtran/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Micromouse/ethan_mehta.png'}}" alt="profilepic"/>
-                  <h3>Ethan Mehta</h3>
-                  <p>Director</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/ethanbmehta/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Micromouse/jason_dong.png'}}" alt="profilepic"/>
-                  <h3>Jason Dong</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/jason-dong-7a8b0a11b/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Micromouse/julian_meyn.png'}}" alt="profilepic"/>
-                  <h3>Julian Meyn</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/julianmeyn/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Micromouse/keahooi_hung.jpg'}}" alt="profilepic"/>
-                  <h3>Keahooi Hung</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/keahooi/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Micromouse/boyang_li.png'}}" alt="profilepic"/>
-                  <h3>Boyang Li</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/boyang-li-a8a347176/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Micromouse/lorne_briones.jpg'}}" alt="profilepic"/>
-                  <h3>Lorne Briones</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/lorne-briones/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Micromouse/anton_than.png'}}" alt="profilepic"/>
-                  <h3>Anton Than</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/anton-than-44154b164/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Micromouse/billy_zhao.png'}}" alt="profilepic"/>
-                  <h3>William (Billy) Zhao</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/billy-zhao-42339b107/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Micromouse/xingyu_jin.png'}}" alt="profilepic"/>
-                  <h3>Xingyu Jin</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/xingyujin/"></a>
-                  </div>
-                </div>
-              </div>
-              <!-- Website -->
-              <h2 id="website" class="ieee-officer-divider">Website</h2>
-              <p>The Website committee maintains the main website of IEEE (what you're seeing now!) and related sub-projects within the student branch.</p>
-              <div class="ieee-officer-group">
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Website/kevin_mo.png'}}" alt="profilepic"/>
-                  <h3>Kevin Mo</h3>
-                  <p>Director</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/mokevin/"></a>
-                    <a target="_blank" class="icon-github" href="https://github.com/encadyma"></a>
-                    <a target="_blank" class="icon-globe" href="https://encadyma.com/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Website/wilson_nguyen.png'}}" alt="profilepic"/>
-                  <h3>Wilson Nguyen</h3>
-                  <p>Director</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/wilson-nguyen-4252b9163/"></a>
-                    <a target="_blank" class="icon-github" href="https://github.com/PotatoParser"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Website/su_latt_phone.jpg'}}" alt="profilepic"/>
-                  <h3>Su Latt Phone</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://linkedin.com/in/sulatt-phone"></a>
-                    <a target="_blank" class="icon-github" href="https://github.com/sulattphone"></a>
-                    <a target="_blank" class="icon-globe" href="https://sulattphone.github.io/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Website/andrew_dinh.png'}}" alt="profilepic"/>
-                  <h3>Andrew Dinh</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/andrewkdinh-com"></a>
-                    <a target="_blank" class="icon-github" href="https://github.com/andrewkdinh"></a>
-                    <a target="_blank" class="icon-globe" href="https://andrewkdinh.com/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Website/john_lee.png'}}" alt="profilepic"/>
-                  <h3>John Lee</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/johnjhlee/"></a>
-                    <a target="_blank" class="icon-github" href="https://github.com/johnlee-jh"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Website/yash-bhargava.jpg'}}" alt="profilepic"/>
-                  <h3>Yash Bhargava</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/yash-bhargava-2a5562177/"></a>
-                    <a target="_blank" class="icon-github" href="https://github.com/yash-dubs"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Website/bill_hu.jpg'}}" alt="profilepic"/>
-                  <h3>Bill Hu</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/bill-hu-83a046139/"></a>
-                    <a target="_blank" class="icon-github" href="https://github.com/DarKnight0102/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Website/kyle_yu.jpg'}}" alt="profilepic"/>
-                  <h3>Kyle Yu</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/imkyleyu/"></a>
-                    <a target="_blank" class="icon-github" href="https://github.com/imkyleyu"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Website/andrew_zhang.jpg'}}" alt="profilepic"/>
-                  <h3>Andrew Zhang</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/aezhang/"></a>
-                    <a target="_blank" class="icon-github" href="https://github.com/aezhang"></a>
-                  </div>
-                </div>
-              </div>
-              <!-- Professional Development -->
-              <h2 id="prodev" class="ieee-officer-divider">Professional Development</h2>
-              <p>The Professional Development committee coordinates with innovators from academia and cooperates with other organizations to bring professional awarness to the EECS community. They host internship and research workshops, undergraduate-graduate student mixers, and national IEEE-sponsored events (SPAC &amp; SPAV).</p>
-              <div class="ieee-officer-group">
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Prodev/xingyu_li.png'}}" alt="profilepic"/>
-                  <h3>Xingyu Li</h3>
-                  <p>Director</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/xingyuli9961/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Prodev/anusha_subramanian.png'}}" alt="profilepic"/>
-                  <h3>Anusha Subramanian</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/subramaniananusha/"></a>
-                  </div>
-                </div>
-              </div>
-              <!-- Technical Operations -->
-              <h2 id="techops" class="ieee-officer-divider">Technical Operations</h2>
-              <p>The Technical Operations (TechOps) committee upgrades and upkeeps the club's technological infrastructure, including their website and mail server, their office space, and their internal organizational documentation.</p>
-              <div class="ieee-officer-group">
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Techops/edwin_lim.png'}}" alt="profilepic"/>
-                  <h3>Edwin Lim</h3>
-                  <p>Director</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/edwin-lim-14180a155/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Techops/mark_theis.jpg'}}" alt="profilepic"/>
-                  <h3>Mark Theis</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-github" href="https://github.com/metheis"></a>
-                    <a target="_blank" class="icon-linkedin" href="https://linkedin.com/in/mark-theis"></a>
-                    <a target="_blank" class="icon-globe" href="https://mark.theis.ca/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Techops/enran_wu.png'}}" alt="profilepic"/>
-                  <h3>Enran Wu</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/enran-wu-b5ba93196/"></a>
-                  </div>
-                </div>
-              </div>
-              <!-- Marketing -->
-              <h2 id="marketing" class="ieee-officer-divider">Marketing</h2>
-              <p>The Marketing committee is in charge of club branding, photography, social media, and our newsletter.</p>
-              <div class="ieee-officer-group">
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Marketing/kat_mau.png'}}" alt="profilepic"/>
-                  <h3>Katja Maucec</h3>
-                  <p>Director</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/katja-maucec/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Marketing/abhik_ahuja.png'}}" alt="profilepic"/>
-                  <h3>Abhik Ahuja</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/abhik-ahuja/"></a>
-                  </div>
-                </div>
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Indrel/pranay_rajpaul.png'}}" alt="profilepic"/>
-                  <h3>Pranay Rajpaul</h3>
-                  <p>Officer</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/pranayrajpaul/"></a>
-                  </div>
-                </div>
-              </div>
-              <!-- Outreach -->
-              <h2 id="marketing" class="ieee-officer-divider">Outreach</h2>
-              <p>The Outreach committee is responsible for all outreach related events such as EECS Women's History Month and Cal Day.</p>
-              <div class="ieee-officer-group">
-                <div class="ieee-officer-card">
-                  <img src="{{asset 'officers/Outreach/conor_martin.png'}}" alt="profilepic"/>
-                  <h3>Conor Martin</h3>
-                  <p>Director</p>
-                  <div class="ieee-officer-socials">
-                    <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/con-mart/"></a>
-                  </div>
-                </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Exec/julie_chun.jpg'}}" alt="Julie Chun"/>
+              <h3>Julie Chun</h3>
+              <p>Secretary</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/julie-chun/"></a>
               </div>
             </div>
           </div>
+          <!-- Activities -->
+          <h2 id="activities" class="ieee-officer-divider">Activities</h2>
+          <p>The Activities committee provides social support for the EECS community by planning and organizing social events.</p>
+          <div class="ieee-officer-group">
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Activities/george_wang.jpg'}}" alt="George Wang"/>
+              <h3>George Wang</h3>
+              <p>Director</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/wgeorge/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Activities/justin_chen.png'}}" alt="Justin Chen"/>
+              <h3>Justin Chen</h3>
+              <p>Director</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/justindchen/"></a>
+                <a target="_blank" class="icon-github" href="github.com/jdchen778"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Activities/kathy_wu.png'}}" alt="Kathy Wu"/>
+              <h3>Kathy Wu</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/kathy-wu-76b97a139/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Activities/aditya_bhawal.png'}}" alt="Aditya Bhawal"/>
+              <h3>Aditya Bhawal</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/aditya-bhawal-4a4352145/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Activities/charles-liu.jpg'}}" alt="Aditya Bhawal"/>
+              <h3>Charles Liu</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://linkedin.com/in/charlesliu2002"></a>
+                <a target="_blank" class="icon-github" href="https://github.com/CharlesLiu02"></a>
+              </div>
+            </div>
+          </div>
+          <!-- HOPE -->
+          <h2 id="hope" class="ieee-officer-divider">HOPE</h2>
+          <p>HOPE serves as the backbone for developing and facilitating our IEEE Hands on Practical Electronics DeCal, a fun and interactive course to introduce electrical engineering fundamentals to non-EECS students. HOPE is one of our most popular student services, garnering strong support from both the EECS department and IEEE National.The Executive officers oversee club affairs, initiate and maintain relations with external and internal parties, manage finances, and lead large events.</p>
+          <div class="ieee-officer-group">
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Hope/leon_wu.jpg'}}" alt="profilepic"/>
+              <h3>Leon Wu</h3>
+              <p>Director</p>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Hope/jeffrey_ni.png'}}" alt="profilepic"/>
+              <h3>Jeffrey Ni</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/jeffreyni/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Hope/neha-venkatesh.jpg'}}" alt="profilepic"/>
+              <h3>Neha Venkatesh</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/nehavenkatesh/"></a>
+                <a target="_blank" class="icon-globe" href="http://nehavenkatesh.com/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Hope/riddhi-bagadiaa.jpg'}}" alt="profilepic"/>
+              <h3>Riddhi Baghadiaa</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/riddhi-bagadiaa/"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Indrel -->
+          <h2 id="indrel" class="ieee-officer-divider">Industrial Relations</h2>
+          <p>The Industrial Relations committee is responsible for communicating and interfacing with external organizations and companies. Officers personally interact and cooperate with company representatives and help host infosessions, tech-talks, the biannual Startup Fair, and other industry events that are beneficial to the EECS student body.</p>
+          <div class="ieee-officer-group">
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Indrel/efsane_soyer.jpg'}}" alt="Efsane Soyer"/>
+              <h3>Efsane Soyer</h3>
+              <p>Director</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/efsanesoyer/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Indrel/pranay_rajpaul.png'}}" alt="Pranay Rajpaul"/>
+              <h3>Pranay Rajpaul</h3>
+              <p>Director</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/pranayrajpaul/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Indrel/anoosha_balebail.jpg'}}" alt="Anoosha Balebail"/>
+              <h3>Anoosha Balebail</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/anoosha-balebail-3262b2104/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Indrel/joshua_wong.png'}}" alt="Joshua Wong"/>
+              <h3>Joshua Wong</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/joshuawong5/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Indrel/ram_abe.png'}}" alt="Ram Abeyakaran"/>
+              <h3>Ram Abeyakaran</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/babeyakaran/"></a>
+                <a target="_blank" class="icon-globe" href="https://ramanan.dev/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Indrel/sashrika-pandey.jpg'}}" alt="profilepic"/>
+              <h3>Sashrika Pandey</h3>
+              <p>Director</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-github" href="https://github.com/sashrikap"></a>
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/sashrika-pandey/"></a>
+                <a target="_blank" class="icon-globe" href="https://sashrikapandey.digital/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Indrel/vivian_hsu.jpg'}}" alt="Vivian Hsu"/>
+              <h3>Vivian Hsu</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/vivian-hsu-1833bb196/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Indrel/soohyuk-cho.jpg'}}" alt="Anoosha Balebail"/>
+              <h3>Soohyuk Cho</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="linkedin.com/in/soohyuk-cho-99975315b"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Micromouse -->
+          <h2 id="micromouse" class="ieee-officer-divider">Micromouse</h2>
+          <p>Micromouse serves as the backbone for developing our decal around creating an autonomous mouse used to navigate a maze.</p>
+          <div class="ieee-officer-group">
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Micromouse/Matthew-Tran.jng'}}" alt="profilepic"/>
+              <h3>Matthew Tran</h3>
+              <p>Director</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/matthewlamtran/"></a>
+                <a target="_blank" class="icon-github" href="https://github.com/dragonlock2"></a>
+                <a target="_blank" class="icon-globe" href="https://www.matthewtran.dev"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Micromouse/ethan_mehta.png'}}" alt="profilepic"/>
+              <h3>Ethan Mehta</h3>
+              <p>Director</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/ethanbmehta/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Micromouse/jason_dong.png'}}" alt="profilepic"/>
+              <h3>Jason Dong</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/jason-dong-7a8b0a11b/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Micromouse/julian_meyn.png'}}" alt="profilepic"/>
+              <h3>Julian Meyn</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/julianmeyn/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Micromouse/keahooi_hung.jpg'}}" alt="profilepic"/>
+              <h3>Keahooi Hung</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/keahooi/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Micromouse/boyang_li.png'}}" alt="profilepic"/>
+              <h3>Boyang Li</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/boyang-li-a8a347176/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Micromouse/lorne_briones.jpg'}}" alt="profilepic"/>
+              <h3>Lorne Briones</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/lorne-briones/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Micromouse/anton_than.png'}}" alt="profilepic"/>
+              <h3>Anton Than</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/anton-than-44154b164/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Micromouse/billy_zhao.png'}}" alt="profilepic"/>
+              <h3>William (Billy) Zhao</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/billy-zhao-42339b107/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Micromouse/xingyu_jin.png'}}" alt="profilepic"/>
+              <h3>Xingyu Jin</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/xingyujin/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Micromouse/David-Cheng.jpg'}}" alt="profilepic"/>
+              <h3>David Cheng</h3>
+              <p>Officer</p>
+            </div>
+          </div>
+          <!-- Website -->
+          <h2 id="website" class="ieee-officer-divider">Website</h2>
+          <p>The Website committee maintains the main website of IEEE (what you're seeing now!) and related sub-projects within the student branch.</p>
+          <div class="ieee-officer-group">
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Website/kevin_mo.png'}}" alt="profilepic"/>
+              <h3>Kevin Mo</h3>
+              <p>Director</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/mokevin/"></a>
+                <a target="_blank" class="icon-github" href="https://github.com/encadyma"></a>
+                <a target="_blank" class="icon-globe" href="https://encadyma.com/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Website/wilson_nguyen.png'}}" alt="profilepic"/>
+              <h3>Wilson Nguyen</h3>
+              <p>Director</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/wilson-nguyen-4252b9163/"></a>
+                <a target="_blank" class="icon-github" href="https://github.com/PotatoParser"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Website/su_latt_phone.jpg'}}" alt="profilepic"/>
+              <h3>Su Latt Phone</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://linkedin.com/in/sulatt-phone"></a>
+                <a target="_blank" class="icon-github" href="https://github.com/sulattphone"></a>
+                <a target="_blank" class="icon-globe" href="https://sulattphone.github.io/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Website/andrew_dinh.png'}}" alt="profilepic"/>
+              <h3>Andrew Dinh</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/andrewkdinh-com"></a>
+                <a target="_blank" class="icon-github" href="https://github.com/andrewkdinh"></a>
+                <a target="_blank" class="icon-globe" href="https://andrewkdinh.com/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Website/john_lee.png'}}" alt="profilepic"/>
+              <h3>John Lee</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/johnjhlee/"></a>
+                <a target="_blank" class="icon-github" href="https://github.com/johnlee-jh"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Website/yash-bhargava.jpg'}}" alt="profilepic"/>
+              <h3>Yash Bhargava</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/yash-bhargava-2a5562177/"></a>
+                <a target="_blank" class="icon-github" href="https://github.com/yash-dubs"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Website/bill_hu.jpg'}}" alt="profilepic"/>
+              <h3>Bill Hu</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/bill-hu-83a046139/"></a>
+                <a target="_blank" class="icon-github" href="https://github.com/DarKnight0102/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Website/kyle_yu.jpg'}}" alt="profilepic"/>
+              <h3>Kyle Yu</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/imkyleyu/"></a>
+                <a target="_blank" class="icon-github" href="https://github.com/imkyleyu"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Website/andrew_zhang.jpg'}}" alt="profilepic"/>
+              <h3>Andrew Zhang</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/aezhang/"></a>
+                <a target="_blank" class="icon-github" href="https://github.com/aezhang"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Professional Development -->
+          <h2 id="prodev" class="ieee-officer-divider">Professional Development</h2>
+          <p>The Professional Development committee coordinates with innovators from academia and cooperates with other organizations to bring professional awarness to the EECS community. They host internship and research workshops, undergraduate-graduate student mixers, and national IEEE-sponsored events (SPAC &amp; SPAV).</p>
+          <div class="ieee-officer-group">
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Prodev/xingyu_li.png'}}" alt="profilepic"/>
+              <h3>Xingyu Li</h3>
+              <p>Director</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/xingyuli9961/"></a>
+                <a target="_blank" class="icon-github" href="https://github.com/xingyuli9961"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Prodev/anusha_subramanian.png'}}" alt="profilepic"/>
+              <h3>Anusha Subramanian</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/subramaniananusha/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Prodev/Kyle-Wang.jpg'}}" alt="profilepic"/>
+              <h3>Kyle Wang</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/kyle-a-wang/"></a>
+                <a target="_blank" class="icon-github" href="https://github.com/kylewang811"></a>
+                <a target="_blank" class="icon-globe" href="https://www.kyleawang.com/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Prodev/abhi-ganesh.jpg'}}" alt="profilepic"/>
+              <h3>Abhi Ganesh</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://linkedin.com/in/abhiganesh"></a>
+                <a target="_blank" class="icon-github" href="https://github.com/abhiganesh/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Prodev/jason-dong.jpg'}}" alt="profilepic"/>
+              <h3>Jason Dong</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/jasonzdong/"></a>
+                <a target="_blank" class="icon-github" href="https://github.com/Jason-Dong"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Technical Operations -->
+          <h2 id="techops" class="ieee-officer-divider">Technical Operations</h2>
+          <p>The Technical Operations (TechOps) committee upgrades and upkeeps the club's technological infrastructure, including their website and mail server, their office space, and their internal organizational documentation.</p>
+          <div class="ieee-officer-group">
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Techops/edwin_lim.png'}}" alt="profilepic"/>
+              <h3>Edwin Lim</h3>
+              <p>Director</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-github" href="https://github.com/edwinlim0919"></a>
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/edwin-lim-14180a155/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Techops/mark_theis.jpg'}}" alt="profilepic"/>
+              <h3>Mark Theis</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-github" href="https://github.com/metheis"></a>
+                <a target="_blank" class="icon-linkedin" href="https://linkedin.com/in/mark-theis"></a>
+                <a target="_blank" class="icon-globe" href="https://mark.theis.ca/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Techops/enran-wu.png'}}" alt="profilepic"/>
+              <h3>Enran Wu</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/enran-wu-b5ba93196/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Techops/khoi-nguyen.jpg'}}" alt="profilepic"/>
+              <h3>Khoi Nguyen</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-github" href="https://github.com/khoing0810"></a>
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/khoinguyen0810/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Techops/anish-kachinthaya.jpg'}}" alt="profilepic"/>
+              <h3>Anish Kachinthaya</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-github" href="http://github.com/anishk23733"></a>
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/anish-kachinthaya"></a>
+                <a target="_blank" class="icon-globe" href="https://anishkachinthaya.ml/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Techops/Ashley-Ye.jpg'}}" alt="profilepic"/>
+              <h3>Ashley Ye</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/ashlye/"></a>
+                <a target="_blank" class="icon-github" href="http://github.com/ashleyye"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Marketing -->
+          <h2 id="marketing" class="ieee-officer-divider">Marketing</h2>
+          <p>The Marketing committee is in charge of club branding, photography, social media, and our newsletter.</p>
+          <div class="ieee-officer-group">
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Marketing/katja-maucec.jpg'}}" alt="profilepic"/>
+              <h3>Katja Maucec</h3>
+              <p>Director</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/katja-maucec/"></a>
+                <a target="_blank" class="icon-github" href="https://github.com/katja-maucec"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Marketing/abhik_ahuja.png'}}" alt="profilepic"/>
+              <h3>Abhik Ahuja</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/abhik-ahuja/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Indrel/pranay_rajpaul.png'}}" alt="profilepic"/>
+              <h3>Pranay Rajpaul</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/pranayrajpaul/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Marketing/shirley-xiao.jpg'}}" alt="profilepic"/>
+              <h3>Shirley Xiao</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="linkedin.com/in/s-xiao"></a>
+                <a target="_blank" class="icon-globe" href="shirleytxiao.github.io/me"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Outreach -->
+          <h2 id="marketing" class="ieee-officer-divider">Outreach</h2>
+          <p>The Outreach committee is responsible for all outreach related events such as EECS Women's History Month and Cal Day.</p>
+          <div class="ieee-officer-group">
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Outreach/conor_martin.png'}}" alt="profilepic"/>
+              <h3>Conor Martin</h3>
+              <p>Director</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/con-mart/"></a>
+                <a target="_blank" class="icon-github" href="https://github.com/con-mart"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Outreach/prachi-deo.jpg'}}" alt="profilepic"/>
+              <h3>Prachi Deo</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="https://www.linkedin.com/in/prachi-deo-b60170140/"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Outreach/shaamer-kumar.jpg'}}" alt="profilepic"/>
+              <h3>Shaamer Kumar</h3>
+              <p>Officer</p>
+              <div class="ieee-officer-socials">
+                <a target="_blank" class="icon-linkedin" href="www.linkedin.com/in/shaamerkumar"></a>
+              </div>
+            </div>
+            <div class="ieee-officer-card">
+              <img src="{{asset 'officers/Outreach/bowen-wang.jpg'}}" alt="profilepic"/>
+              <h3>Bowen Wang</h3>
+              <p>Officer</p>
+            </div>
+          </div>
         </div>
-      </article>
-    </main>
-  </div>
+      </div>
+    </div>
+  </article>
+</main>
+</div>
 {{/post}}
 
 {{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
 {{#contentFor "scripts"}}
-  <script defer src="{{asset "js/page.js"}}"></script>
+<script defer src="{{asset "js/page.js"}}"></script>
 {{/contentFor}}
